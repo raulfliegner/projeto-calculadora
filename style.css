@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    border: none;
 }
 
 body, html {
@@ -14,11 +15,36 @@ body, html {
 }
 
 .calculadora {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.8);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 15px;
     padding: 15px;
+    text-align: center;
+}
+
+.botao {
+    height: 50px;
+    width: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: rgb(31, 30, 30);
+    color: white;
+    margin: 2px;
+}
+
+.botao:hover {
+    background-color: black;
+}
+
+#resultado {
+    background-color: white;
+    height: 35px;
+    margin: 3px 0px;
+    font-size: 30px;
+    color: black;
+    text-align: right;
+    padding-right: 5px;
 }
